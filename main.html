@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <style type="text/css">
+        canvas {
+            width: 200px;
+            height: 150px;
+        }
+    </style>
+    <script type="text/javascript">
+        function getid(id) {
+            return document.getElementById(id);
+        }
+
+        window.onload = function () {
+            var cnv = getid("canvas");
+            var cxt = cnv.getContext("2d");
+            cxt.strokeRect(50, 50, 80, 80);
+        }
+    </script>
+</head>
+
+<body>
+    <canvas id="canvas"></canvas>
+</body>
+
+</html>
